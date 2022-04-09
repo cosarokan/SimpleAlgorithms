@@ -21,12 +21,12 @@ namespace Fibonacci
         }
         public static List<int> Fibonacci(int count)
         {
-            List<int> ar = new List<int> { 0, 1 };
+            List<int> ar = new List<int> { 0, 1 }; // list created
 
             for (int i = 2; i < count; i++)
             {
-                int twoPrevious = ar[i - 2];
-                int onePrevious = ar[i - 1];
+                int twoPrevious = ar[i - 2]; //two previous values ​​found
+                int onePrevious = ar[i - 1]; //one previous values ​​found
 
                 ar.Add(twoPrevious + onePrevious);
             }
