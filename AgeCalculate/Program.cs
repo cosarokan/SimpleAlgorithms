@@ -19,13 +19,8 @@ namespace AgeCalculate
         }
         public static int AgeCalculate(DateTime date)
         {
-            int result = 0;
-
             DateTime dateTime = DateTime.Now;
-
-            result = dateTime.Year - date.Year;
-
-            return result;
+            return dateTime.Year - date.Year;
         }
     }
 }
